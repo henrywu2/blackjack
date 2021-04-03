@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(OpenSans-Regular.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font: 18px "Open Sans";
+}
+
+main {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0px;
+}
+
+button {
+  font: 24px "Open Sans";
+  color: white;
+  background-color: darkcyan;
+  border: 2px solid black;
+  border-radius: 0;
+  margin: 0px 5px;
+}
+
+input {
+  font-family: "Open Sans";
+}
+
+.buttons, #bet, #status {
+  height: 40px;
+  margin: 20px 0px;
+}
+
+#table {
+  margin-top: 20px;
+  border: 5px solid black;
+  background-color: rgb(0, 85, 0);
+}
+
+#cover {
+  transition: background-color 1.5s;
+  position: fixed;
+}
+
+.fade {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+#slide {
+  transition: top 1s 0.5s;
+  top: -10%;
+}
+
+.hidden {
+  position: fixed;
+  height: 100%;
+  top: 50% !important;
+  left: 50%;
+}
+
+#bankrupt {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  font: 18px "Consolas";
+  background-color: white;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.tabletext {
+  color: white;
+  margin: 10px;
+}
+
+.tableside {
+  margin: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 182.375px);
+  min-height: 237.33px;
+}
+
+.cheat {
+  background-color: darksalmon;
 }
