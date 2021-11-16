@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Buttons = props => {
     if (props.status === 'Press "Deal" to start a new game!') return (
         <div id='buttons'>

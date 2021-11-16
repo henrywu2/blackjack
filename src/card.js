@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Card = props => {
     if (props.blank) return (
         <div className='card'>

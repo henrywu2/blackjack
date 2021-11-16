@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card } from './card.js';
 
 const Table = props => {
