@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url(OpenSans-Regular.ttf) format('truetype');
+  font-family: "Open Sans";
+  src: url('./OpenSans-Regular.ttf') format('truetype');
 }
 
 body {
-  font: 18px "Open Sans";
+  font: 18px "Open Sans", sans-serif;
 }
 
 main {
@@ -77,7 +77,7 @@ input {
 }
 
 .card {
-  font: 18px "Consolas";
+  font: 18px "Consolas", monospace;
   background-color: white;
   margin: 10px;
   border: 2px solid black;

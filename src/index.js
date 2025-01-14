@@ -267,8 +267,8 @@ const acesParse = arr => {
   let total = arr.reduce((curr, next) => curr + next, 0);
   let numAces = arr.reduce((curr, next) => next === 11 ? curr + 1 : curr, 0);
   for (let i = 0; i < numAces; i++) {
-    total -= 10;
     if (total <= 21) break;
+    total -= 10;
   }
   return total;
 }
